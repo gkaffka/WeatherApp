@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6CC0E5</color>
+    <color name="colorPrimaryDark">#3990b2</color>
+    <color name="colorAccent">#6CC0E5</color>
+    <color name="listBg">#FFFFFF</color>
+    <color name="fabSign">#FFFFFF</color>
+
+</resources>
