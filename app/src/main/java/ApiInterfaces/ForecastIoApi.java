@@ -1,4 +1,4 @@
-package ApiInterfaces;
+package apiInterfaces;
 
 public class ForecastIoApi {
 }

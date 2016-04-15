@@ -1,4 +1,4 @@
-package weatherapp.com.kaffka.weatherapp.Activities;
+package activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
