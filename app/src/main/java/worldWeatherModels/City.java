@@ -19,16 +19,16 @@ final public class City {
         this.weatherUrl = weatherUrl;
     }
 
-    public List<Value> getAreaName() {
-        return areaName;
+    public String getAreaName() {
+        return areaName.get(0).getValue();
     }
 
-    public List<Value> getCountry() {
-        return country;
+    public String getCountry() {
+        return country.get(0).getValue();
     }
 
-    public List<Value> getRegion() {
-        return region;
+    public String getRegion() {
+        return region.get(0).getValue();
     }
 
     public String getLatitude() {
@@ -39,7 +39,15 @@ final public class City {
         return longitude;
     }
 
+    public String getCoordinates() {
+        return getLatitude() + " / " + getLongitude();
+    }
+
     public List<Value> getWeatherUrl() {
         return weatherUrl;
+    }
+
+    public String getCityAndArea() {
+        return getAreaName() + " - " + getRegion();
     }
 }

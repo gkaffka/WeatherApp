@@ -3,7 +3,8 @@
     <color name="colorPrimary">#6CC0E5</color>
     <color name="colorPrimaryDark">#3990b2</color>
     <color name="colorAccent">#6CC0E5</color>
-    <color name="listBg">#FFFFFF</color>
+    <color name="listBg">#FAFAFA</color>
     <color name="fabSign">#FFFFFF</color>
-
+    <color name="labelGray">#333333</color>
+    <color name="valueGray">#666666</color>
 </resources>
