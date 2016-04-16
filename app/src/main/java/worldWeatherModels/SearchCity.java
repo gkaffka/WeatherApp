@@ -2,7 +2,7 @@ package worldWeatherModels;
 
 import com.google.gson.annotations.SerializedName;
 
-public class SearchCity {
+final public class SearchCity {
     @SerializedName("search_api")
     final private Results searchApi;
 

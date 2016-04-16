@@ -1,6 +1,7 @@
 package adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -16,9 +17,11 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.List;
 
 import activities.MainActivity;
+import activities.WeatherInfo;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import events.EventAddCity;
+import util.Constants;
 import weatherapp.com.kaffka.weatherapp.R;
 import worldWeatherModels.City;
 
@@ -69,7 +72,7 @@ public class CityListAdapter extends RecyclerView.Adapter<CityListAdapter.ViewHo
     }
 
 
-    private void loadViews(ViewHolder holder, int position) {
+    private void loadViews(ViewHolder holder, final int position) {
         final City m = mCityList.get(position);
         try {
             if (showRemoveOption()) holder.mImgDelete.setVisibility(View.VISIBLE);
@@ -79,24 +82,51 @@ public class CityListAdapter extends RecyclerView.Adapter<CityListAdapter.ViewHo
             holder.mItemCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    EventBus.getDefault().postSticky(new EventAddCity(m));
-                    ((AppCompatActivity) mContext).finish();
+                    if (!showRemoveOption()) {
+                        EventBus.getDefault().postSticky(new EventAddCity(m));
+                        ((AppCompatActivity) mContext).finish();
+                    } else {
+                        mContext.startActivity(getWeatherInfoIntent(m.getLatitude(), m.getLongitude(), m.getCityAndArea()));
+                    }
                 }
             });
             holder.mImgDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    removeItem(position);
                 }
             });
 
         } catch (NullPointerException e) {
             Toast.makeText(mContext, R.string.generic_error, Toast.LENGTH_LONG).show();
         }
-
     }
 
     private boolean showRemoveOption() {
         return mContext instanceof MainActivity;
+    }
+
+    private void removeItem(int position) {
+        mCityList.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mCityList.size());
+        showExplainer();
+    }
+
+    private void showExplainer() {
+        if (showRemoveOption()) {
+            if (mCityList.isEmpty())
+                ((MainActivity) mContext).getFabExplainer().setVisibility(View.VISIBLE);
+            else
+                ((MainActivity) mContext).getFabExplainer().setVisibility(View.GONE);
+        }
+    }
+
+    private Intent getWeatherInfoIntent(String latitude, String longitude, String location) {
+        Intent i = new Intent(mContext, WeatherInfo.class);
+        i.putExtra(Constants.intents.LATITUDE.name(), latitude);
+        i.putExtra(Constants.intents.LONGITUDE.name(), longitude);
+        i.putExtra(Constants.intents.LOCATION_NAME.name(), location);
+        return i;
     }
 }

@@ -10,14 +10,28 @@
 
     <style name="LabelStyle" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">sans-serif-regular</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/labelGray</item>
     </style>
 
     <style name="ValueStyle" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/valueGray</item>
     </style>
+
+    <style name="seekBarLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/valueGray</item>
+    </style>
+
+    <style name="temperatureStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/valueGray</item>
+    </style>
+
+
 
 </resources>

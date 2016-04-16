@@ -7,4 +7,22 @@
     <string name="city_label">Region - City</string>
     <string name="coordinates_label">Latitude / Longitude</string>
     <string name="loading_message">Searching for aliens, I mean places...</string>
+    <string name="loading_message_weather">Sure is something between -20°C and 40°C, but I\'m looking it up for you anyway..</string>
+    <string name="fab_explainer">Click here to look \nfor another city</string>
+    <string name="time">Time: </string>
+    <string name="hour_0">0</string>
+    <string name="hour_3">3</string>
+    <string name="hour_6">6</string>
+    <string name="hour_9">9</string>
+    <string name="hour_12">12</string>
+    <string name="hour_15">15</string>
+    <string name="hour_18">18</string>
+    <string name="hour_21">21</string>
+    <string name="temperature">Temperature: </string>
+    <string name="precipitation">Precipitation: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="wind">Wind: </string>
+    <string name="celsius">°C</string>
+    <string name="fahrenheit">°F</string>
+
 </resources>

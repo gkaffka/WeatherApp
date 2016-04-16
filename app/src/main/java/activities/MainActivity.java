@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.recycler_view)
     RecyclerView mRecycler;
+    @Bind(R.id.txt_fab_explainer)
+    TextView mTxtFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, R.string.generic_error, Toast.LENGTH_LONG).show();
             return;
         }
+        mTxtFab.setVisibility(View.GONE);
         mCityList.add(ev.getCity());
         mAdapter.notifyDataSetChanged();
         EventBus.getDefault().removeStickyEvent(ev);
@@ -75,5 +80,9 @@ public class MainActivity extends AppCompatActivity {
         mCityList = new ArrayList<>();
         mAdapter = new CityListAdapter(mCityList, this);
         mRecycler.setAdapter(mAdapter);
+    }
+
+    public TextView getFabExplainer() {
+        return mTxtFab;
     }
 }

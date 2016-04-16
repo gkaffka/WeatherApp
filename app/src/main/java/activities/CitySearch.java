@@ -90,7 +90,7 @@ public class CitySearch extends AppCompatActivity {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void loadList(EventError ev) {
+    public void onError(EventError ev) {
         mDialog.dismiss();
         Toast.makeText(this, R.string.generic_error, Toast.LENGTH_LONG).show();
     }
