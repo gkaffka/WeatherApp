@@ -175,8 +175,8 @@ public class WeatherInfoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         String tempMaxF = w.getMaxtempF() + mContext.getString(R.string.fahrenheit);
         String tempMinC = w.getMintempC() + mContext.getString(R.string.celsius);
         String tempMinF = w.getMintempF() + mContext.getString(R.string.fahrenheit);
-        String tempMax = tempMaxC + " / " + tempMaxF;
-        String tempMin = tempMinC + " / " + tempMinF;
+        String tempMax = mContext.getString(R.string.max) + " " + tempMaxC + " / " + tempMaxF;
+        String tempMin = mContext.getString(R.string.min) + " " + tempMinC + " / " + tempMinF;
         holder.mTxtMax.setText(tempMax);
         holder.mTxtMin.setText(tempMin);
         holder.mTxtTempC.setText(temp);
