@@ -131,6 +131,7 @@ public class CitySearch extends AppCompatActivity {
     private void initProgressDialog() {
         mDialog = new ProgressDialog(this);
         mDialog.setMessage(getString(R.string.loading_message));
+        mDialog.setCancelable(false);
         mDialog.show();
     }
 
