@@ -1,6 +1,6 @@
 # WeatherApp
-An Android Weather App
-A simple weather app build to use the API from http://www.worldweatheronline.com/
+
+An Android weather app build to use the API from http://www.worldweatheronline.com/
 ###Getting started
 Clone the repository and import the project in Android Studio, you can try the app installing the `weather_app.apk` available in the project root.
 
