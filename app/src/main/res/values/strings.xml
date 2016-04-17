@@ -28,5 +28,7 @@
     <string name="kmh">km/h</string>
     <string name="day">DAY</string>
     <string name="now">NOW</string>
+    <string name="max">Max:</string>
+    <string name="min">Min:</string>
     <string name="updated_at">Updated at:</string>
 </resources>

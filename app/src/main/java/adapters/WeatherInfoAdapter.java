@@ -33,6 +33,10 @@ public class WeatherInfoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         TextView mTxtDate;
         @Bind(R.id.txt_weather_temperatures_c)
         TextView mTxtTempC;
+        @Bind(R.id.txt_max_temp)
+        TextView mTxtMax;
+        @Bind(R.id.txt_min_temp)
+        TextView mTxtMin;
         @Bind(R.id.txt_weather_status)
         TextView mTxtStatus;
         @Bind(R.id.txt_precipitation)
@@ -153,8 +157,8 @@ public class WeatherInfoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     private void loadHeaderViews(final ViewHolderHeader holder) {
         try {
-            if(mCurrentCondition!=null)
-            initHeaderViews(holder);
+            if (mCurrentCondition != null)
+                initHeaderViews(holder);
         } catch (Exception e) {
         }
     }
@@ -167,6 +171,14 @@ public class WeatherInfoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         String preci = mContext.getString(R.string.precipitation) + " " + w.getHourly().get(i).getChanceofrain() + "%";
         String humi = mContext.getString(R.string.humidity) + " " + w.getHourly().get(i).getHumidity() + "%";
         String wind = mContext.getString(R.string.wind) + " " + w.getHourly().get(i).getWindspeedKmph() + " " + mContext.getString(R.string.kmh);
+        String tempMaxC = w.getMaxtempC() + mContext.getString(R.string.celsius);
+        String tempMaxF = w.getMaxtempF() + mContext.getString(R.string.fahrenheit);
+        String tempMinC = w.getMintempC() + mContext.getString(R.string.celsius);
+        String tempMinF = w.getMintempF() + mContext.getString(R.string.fahrenheit);
+        String tempMax = tempMaxC + " / " + tempMaxF;
+        String tempMin = tempMinC + " / " + tempMinF;
+        holder.mTxtMax.setText(tempMax);
+        holder.mTxtMin.setText(tempMin);
         holder.mTxtTempC.setText(temp);
         holder.mTxtPrec.setText(preci);
         holder.mTxtHumi.setText(humi);
