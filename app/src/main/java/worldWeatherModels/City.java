@@ -2,7 +2,7 @@ package worldWeatherModels;
 
 import java.util.List;
 
-final public class City {
+final public class City{
     private final List<Value> areaName;
     private final List<Value> country;
     private final List<Value> region;

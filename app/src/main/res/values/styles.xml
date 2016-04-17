@@ -28,10 +28,19 @@
 
     <style name="temperatureStyle" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/valueGray</item>
     </style>
 
+    <style name="dateStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
 
-
+    <style name="upDatedAtStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/valueGray</item>
+    </style>
 </resources>

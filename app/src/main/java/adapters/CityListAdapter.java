@@ -21,6 +21,7 @@ import activities.WeatherInfo;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import events.EventAddCity;
+import services.CityDataBase;
 import util.Constants;
 import weatherapp.com.kaffka.weatherapp.R;
 import worldWeatherModels.City;
@@ -107,6 +108,7 @@ public class CityListAdapter extends RecyclerView.Adapter<CityListAdapter.ViewHo
     }
 
     private void removeItem(int position) {
+        new CityDataBase(mContext).deleteCityFromDb(mCityList.get(position));
         mCityList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, mCityList.size());

@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
@@ -22,11 +25,13 @@ import events.EventGetWeatherInfo;
 import services.GetWeatherInfo;
 import util.Constants;
 import weatherapp.com.kaffka.weatherapp.R;
+import worldWeatherModels.CurrentCondition;
 import worldWeatherModels.Weather;
 
 public class WeatherInfo extends AppCompatActivity {
 
     private List<Weather> mWeatherList;
+    private List<CurrentCondition> mCurrentCondition;
     private WeatherInfoAdapter mAdapter;
     private String latitude, longitude, location_name;
     private ProgressDialog mDialog;
@@ -42,6 +47,7 @@ public class WeatherInfo extends AppCompatActivity {
         initRecyclerView();
         initArguments();
         callService();
+        initToolbar();
     }
 
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
@@ -51,7 +57,10 @@ public class WeatherInfo extends AppCompatActivity {
             Toast.makeText(WeatherInfo.this, R.string.generic_error, Toast.LENGTH_LONG).show();
             return;
         }
-        mWeatherList.addAll(ev.getWeatherData().getWeather());
+        mWeatherList.clear();
+        mCurrentCondition.clear();
+        mCurrentCondition.add(ev.getWeatherData().getCurrentCondition());
+        mWeatherList.addAll(ev.getWeatherData().getWeather().subList(0, 6));
         mAdapter.notifyDataSetChanged();
         EventBus.getDefault().removeStickyEvent(ev);
     }
@@ -76,12 +85,32 @@ public class WeatherInfo extends AppCompatActivity {
         super.onStop();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_weather, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_refresh:
+                callService();
+                return true;
+            default:
+                finish();
+                return true;
+        }
+    }
+
     private void initRecyclerView() {
         LinearLayoutManager mLayoutManager;
         mLayoutManager = new LinearLayoutManager(this);
         mRecycler.setLayoutManager(mLayoutManager);
         mWeatherList = new ArrayList<>();
-        mAdapter = new WeatherInfoAdapter(mWeatherList, this);
+        mCurrentCondition = new ArrayList<>();
+        mAdapter = new WeatherInfoAdapter(mWeatherList, mCurrentCondition, this);
         mRecycler.setAdapter(mAdapter);
     }
 
@@ -108,7 +137,7 @@ public class WeatherInfo extends AppCompatActivity {
     }
 
     private void initToolbar() {
-        getSupportActionBar().setTitle(getString(R.string.app_name) + " - " + location_name);
+        getSupportActionBar().setTitle(location_name);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }

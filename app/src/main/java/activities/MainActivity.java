@@ -21,6 +21,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import events.EventAddCity;
+import services.CityDataBase;
 import weatherapp.com.kaffka.weatherapp.R;
 import worldWeatherModels.City;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initRecyclerView();
+        loadSavedCitiesFromDb();
     }
 
     @OnClick(R.id.fab)
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mTxtFab.setVisibility(View.GONE);
         mCityList.add(ev.getCity());
         mAdapter.notifyDataSetChanged();
+        saveCityToDb(ev.getCity());
         EventBus.getDefault().removeStickyEvent(ev);
     }
 
@@ -84,5 +87,15 @@ public class MainActivity extends AppCompatActivity {
 
     public TextView getFabExplainer() {
         return mTxtFab;
+    }
+
+    private void saveCityToDb(City city) {
+        new CityDataBase(this).saveCityToDb(city);
+    }
+
+    private void loadSavedCitiesFromDb() {
+        mCityList.addAll(new CityDataBase(this).getCityFromDb());
+        mAdapter.notifyDataSetChanged();
+        if (!mCityList.isEmpty()) mTxtFab.setVisibility(View.GONE);
     }
 }
