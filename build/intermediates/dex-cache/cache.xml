@@ -1,2 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/0.88.3/d0d6edfa4b1d9c3bf8a76b231a616350137b76c9/realm-annotations-0.88.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d0d6edfa4b1d9c3bf8a76b231a616350137b76c9">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-annotations-0.88.3_67275cc570a8e8ff230cef29c03ac8791f6ee1a3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_bdaa4d428b378817f50fdee7d9114bba60ba3b6c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_d81789e3fb9241447a3e3a845cd161e2949cae6c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.0.1/1d232df84491c0453e077002509911301109409d/logging-interceptor-3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1d232df84491c0453e077002509911301109409d">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.0.1_5dee17061ac4ef33da0a45cb6efb35f302af7272/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/io.realm/realm-android-library/0.88.3/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3b33bdbe6218ef3a2f81c30ea9dd2797b2a9745d">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.realm-realm-android-library-0.88.3_e4e88ee819b5d23c9eacb72d300f7e6958e74eef/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_fe7e5c17bc04757722fe8fa3e08465c0d2c3d9c6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_cb9cb54f240f4f501d2201967bfbbd236412a77f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_1361b51a85d607b70f469608bd7420604fca46f2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.3.0_9c505d2363f32a8117f3ebe2c0e5ddfcfb72c070/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_e14bf7a6a383c1fee58d1b1360ce09c80af68fdc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_dad5c38292408c1a1675a225fa01a75484dfca98/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-7.0.1_fbe0b1e4361f037467bfa28f727da0dac6208df8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c505191ffb99de1474949164cc5c7bf37ca93c3e">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_178a1079776418bd1728a65871621015e235ffcf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_de90adc862f21712f682a17967e138dec49d185c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.1/27293c440d2085cde1d859528aff6e7d3b6ae40/retrofit-2.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="027293c440d2085cde1d859528aff6e7d3b6ae40">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.1_42011240a969022d5704645af2b4858717b64542/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e0bc657ed9bc95941cdfda517e4fe7cb24e8a747">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b54d973d831b9753c9a2545a8d398855373b7d5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_55a79bbeeacb945c70e5a77994e43a9f3afd8b34/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.1/2780d858273ce1bb90f6b12e1ef0d40f7741fca/converter-gson-2.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="02780d858273ce1bb90f6b12e1ef0d40f7741fca">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.1_1c99f4e57958b7851f0139f8eec459c65622f7ca/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_acfc3af0f90254cb5f6797f66fe25f02fd967add/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-3.0.0_6da5dfbab2a12e5ffba040cd42322b4760e89855/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_9c2f0065e197c79291e29636316bb793ba98dd74/classes.dex" />
+    </item>
+    <item
+        jar="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/kaffka/Documents/WeatherApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_bb1484c36a5f8f9d2c064d59928fdf5de436fde7/classes.dex" />
+    </item>
+
+</items>
