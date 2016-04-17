@@ -18,4 +18,4 @@ List of libraries used in the project so far
 You can [build and run](https://developer.android.com/tools/building/building-studio.html) the project using the Android Studio/Gradle. You need an [android emulator](http://developer.android.com/tools/devices/emulator.html) or a [real device](http://developer.android.com/tools/device.html) to test the build.
 
 ###Screenshots
-![](weather_app.gif
+![](weather_app.gif)
