@@ -11,11 +11,11 @@ import worldWeatherModels.SearchWeather;
 import worldWeatherModels.WeatherData;
 
 public class GetWeatherInfo extends BaseRetrofitService {
-    private final String API_KEY = "183b43b8af2e4fee863110236161504";
-    private final String json = "json";
 
     public void getWeatherInfo(String latitude, String longitude) {
         String query = latitude + "," + longitude;
+        String json = "json";
+        String API_KEY = "183b43b8af2e4fee863110236161504";
         getApiInterface().getWeatherFromCoordinates(query, json, API_KEY).enqueue(new Callback<SearchWeather>() {
             @Override
             public void onResponse(Call<SearchWeather> call, Response<SearchWeather> response) {

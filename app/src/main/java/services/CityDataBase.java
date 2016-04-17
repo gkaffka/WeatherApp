@@ -1,7 +1,5 @@
 package services;
 
-import android.content.Context;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,12 +11,10 @@ import worldWeatherModels.Value;
 
 public class CityDataBase {
 
-    private Context mContext;
     private Realm mRealm;
 
 
-    public CityDataBase(Context mContext) {
-        this.mContext = mContext;
+    public CityDataBase() {
         initRealm();
     }
 

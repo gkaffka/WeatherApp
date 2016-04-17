@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">WeatherApp</string>
-    <string name="find_your_city">Type your City here...</string>
+    <string name="find_your_city">Type your City here…</string>
     <string name="generic_error">Ops, something went wrong!</string>
     <string name="no_city_found">Wow, we couldn\'t find our city. Are you sure you are from this planet?</string>
     <string name="country_label">Country</string>
     <string name="city_label">Region - City</string>
     <string name="coordinates_label">Latitude / Longitude</string>
-    <string name="loading_message">Searching for aliens, I mean places...</string>
-    <string name="loading_message_weather">Checking my Crystal Ball...</string>
+    <string name="loading_message">Searching for aliens, I mean places…</string>
+    <string name="loading_message_weather">Checking my Crystal Ball…</string>
     <string name="fab_explainer">Click here to add a \ncity to your list</string>
     <string name="time">Time: </string>
     <string name="refresh">Refresh</string>

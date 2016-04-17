@@ -108,7 +108,7 @@ public class CityListAdapter extends RecyclerView.Adapter<CityListAdapter.ViewHo
     }
 
     private void removeItem(int position) {
-        new CityDataBase(mContext).deleteCityFromDb(mCityList.get(position));
+        new CityDataBase().deleteCityFromDb(mCityList.get(position));
         mCityList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, mCityList.size());

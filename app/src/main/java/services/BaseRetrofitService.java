@@ -8,11 +8,11 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class BaseRetrofitService {
+class BaseRetrofitService {
 
     private final WorldWeatherApi mServiceInterface;
 
-    public BaseRetrofitService() {
+    BaseRetrofitService() {
         Retrofit mRestAdapter;
 
         HttpLoggingInterceptor interceptorLog = new HttpLoggingInterceptor();
@@ -33,7 +33,7 @@ public class BaseRetrofitService {
         mServiceInterface = mRestAdapter.create(WorldWeatherApi.class);
     }
 
-    public WorldWeatherApi getApiInterface() {
+    WorldWeatherApi getApiInterface() {
         return mServiceInterface;
     }
 }

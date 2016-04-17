@@ -2,7 +2,6 @@ package services;
 
 import org.greenrobot.eventbus.EventBus;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,10 +14,10 @@ import worldWeatherModels.City;
 import worldWeatherModels.SearchCity;
 
 public class GetCityList extends BaseRetrofitService {
-    private final String API_KEY = "183b43b8af2e4fee863110236161504";
-    private final String json = "json";
 
     public void getCityList(String query) {
+        String API_KEY = "183b43b8af2e4fee863110236161504";
+        String json = "json";
         getApiInterface().getCitiesFromInput(query, json, API_KEY, true).enqueue(new Callback<SearchCity>() {
             @Override
             public void onResponse(Call<SearchCity> call, Response<SearchCity> response) {

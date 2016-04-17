@@ -1,6 +1,6 @@
 package worldWeatherModels;
 
-final public class Astronomy {
+final class Astronomy {
 
     final private String sunrise;
     final private String sunset;

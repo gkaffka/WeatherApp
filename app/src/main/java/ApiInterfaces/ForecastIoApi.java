@@ -1,4 +1,4 @@
 package apiInterfaces;
 
-public class ForecastIoApi {
+class ForecastIoApi {
 }

@@ -16,7 +16,7 @@ final public class City{
         this.region = region;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.weatherUrl = weatherUrl;
+        this.weatherUrl = null;
     }
 
     public String getAreaName() {

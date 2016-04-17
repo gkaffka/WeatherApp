@@ -90,11 +90,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveCityToDb(City city) {
-        new CityDataBase(this).saveCityToDb(city);
+        new CityDataBase().saveCityToDb(city);
     }
 
     private void loadSavedCitiesFromDb() {
-        mCityList.addAll(new CityDataBase(this).getCityFromDb());
+        mCityList.addAll(new CityDataBase().getCityFromDb());
         mAdapter.notifyDataSetChanged();
         if (!mCityList.isEmpty()) mTxtFab.setVisibility(View.GONE);
     }

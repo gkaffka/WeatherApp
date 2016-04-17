@@ -96,9 +96,13 @@ public class CitySearch extends AppCompatActivity {
     }
 
     private void initToolbar() {
-        getSupportActionBar().setTitle("");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        try {
+            getSupportActionBar().setTitle("");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }catch (NullPointerException e){
+            Toast.makeText(this,R.string.generic_error,Toast.LENGTH_LONG).show();
+        }
     }
 
 
