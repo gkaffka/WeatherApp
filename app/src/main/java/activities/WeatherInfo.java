@@ -133,6 +133,7 @@ public class WeatherInfo extends AppCompatActivity {
     private void initProgressDialog() {
         mDialog = new ProgressDialog(this);
         mDialog.setMessage(getString(R.string.loading_message_weather));
+        mDialog.setCancelable(false);
         mDialog.show();
     }
 
