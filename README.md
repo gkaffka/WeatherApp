@@ -1,11 +1,11 @@
 # WeatherApp
 
-An Android weather app build to use the API from http://www.worldweatheronline.com/
+An Android weather app built to use the API from http://www.worldweatheronline.com/
 ###Getting started
 Clone the repository and import the project in Android Studio, you can try the app installing the `weather_app.apk` available in the project root.
 
 ###Dependencies
-The depdendencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)
+The dependencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)
 
 List of libraries used in the project so far
 - [EventBus](https://github.com/greenrobot/EventBus) - Android optimized event bus that simplifies communication between Activities, Fragments, Threads, Services, etc.
