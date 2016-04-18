@@ -13,6 +13,7 @@ List of libraries used in the project so far
 - [Retrofit/OKhttp](http://square.github.io/retrofit/) - A type-safe REST client for Android and Java
 - [Gson](https://github.com/google/gson) - Gson is a Java library that can be used to convert Java Objects into their JSON representation.
 - [Realm](https://realm.io/news/realm-for-android/) - Realm is a mobile database: a replacement for SQLite & Core Data.
+- [Picasso](http://square.github.io/picasso/) - A powerful image downloading and caching library for Android
 
 ###Running it
 You can [build and run](https://developer.android.com/tools/building/building-studio.html) the project using the Android Studio/Gradle. You need an [android emulator](http://developer.android.com/tools/devices/emulator.html) or a [real device](http://developer.android.com/tools/device.html) to test the build.
