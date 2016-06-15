@@ -1,11 +1,11 @@
 # WeatherApp
 
-An Android weather app build to use the API from http://www.worldweatheronline.com/
+An Android weather app built to use the API from http://www.worldweatheronline.com/
 ###Getting started
 Clone the repository and import the project in Android Studio, you can try the app installing the `weather_app.apk` available in the project root.
 
 ###Dependencies
-The depdendencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)
+The dependencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)
 
 List of libraries used in the project so far
 - [EventBus](https://github.com/greenrobot/EventBus) - Android optimized event bus that simplifies communication between Activities, Fragments, Threads, Services, etc.
@@ -13,6 +13,7 @@ List of libraries used in the project so far
 - [Retrofit/OKhttp](http://square.github.io/retrofit/) - A type-safe REST client for Android and Java
 - [Gson](https://github.com/google/gson) - Gson is a Java library that can be used to convert Java Objects into their JSON representation.
 - [Realm](https://realm.io/news/realm-for-android/) - Realm is a mobile database: a replacement for SQLite & Core Data.
+- [Picasso](http://square.github.io/picasso/) - A powerful image downloading and caching library for Android
 
 ###Running it
 You can [build and run](https://developer.android.com/tools/building/building-studio.html) the project using the Android Studio/Gradle. You need an [android emulator](http://developer.android.com/tools/devices/emulator.html) or a [real device](http://developer.android.com/tools/device.html) to test the build.
