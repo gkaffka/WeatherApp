@@ -1,10 +1,10 @@
 # WeatherApp
 
 An Android weather app built to use the API from http://www.worldweatheronline.com/
-###Getting started
+### Getting started
 Clone the repository and import the project in Android Studio, you can try the app installing the `weather_app.apk` available in the project root.
 
-###Dependencies
+### Dependencies
 The dependencies for the project are described in the Gradle script `build.gradle` of the app, just sync the project in Android Studio and you are ready to go :)
 
 List of libraries used in the project so far
@@ -15,8 +15,8 @@ List of libraries used in the project so far
 - [Realm](https://realm.io/news/realm-for-android/) - Realm is a mobile database: a replacement for SQLite & Core Data.
 - [Picasso](http://square.github.io/picasso/) - A powerful image downloading and caching library for Android
 
-###Running it
+### Running it
 You can [build and run](https://developer.android.com/tools/building/building-studio.html) the project using the Android Studio/Gradle. You need an [android emulator](http://developer.android.com/tools/devices/emulator.html) or a [real device](http://developer.android.com/tools/device.html) to test the build.
 
-###Screenshots
+### Screenshots
 ![](weather_app.gif)
